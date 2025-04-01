@@ -1,7 +1,7 @@
-# **HEM**
+# **H**igh-**E**ntropy **M**aterials **(HEM)**
 Project devoted to high entropy materials (HEM)
 
-## HECN
+## **H**igh-**E**ntropy **C**arbonitrides **(HECN)**
 A DeepMD model for high-entropy carbides and carbonitrides (HECN) [[1](https://www.nature.com/articles/s41598-024-78377-4),[2](https://www.sciencedirect.com/science/article/pii/S0925838824037666)].
 
 We consider here HECN structures in the crystalline and liquid states, and for each structure we perform AIMD simulations at a constant temperature of 3500 K during the 200 steps with a timestep of 1.5 fs. The general procedure of training is presented in the following figure, and details can be found in the Ref.[1](https://www.nature.com/articles/s41598-024-78377-4)
