@@ -15,6 +15,9 @@ The starting and final learning rate was 1×10<sup>−4</sup> and 5×10<sup>−8
 
 In each DP-GEN [4,5] iteration the DP model is trained with 5.0×10<sup>4</sup> steps.
 
+By using this potential of dataset please cite the following papers [1,2]
+
+
 ### References
 
 [1] V. S. Baidyshev, C. Tantardini, and A. G. Kvashnin, Melting simulations of high-entropy carbonitrides by deep learning potentials, Sci Rep 14, 28678 (2024).
