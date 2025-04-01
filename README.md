@@ -1,14 +1,14 @@
-# HEM
+# **HEM**
 Project devoted to high entropy materials (HEM)
 
-##HECN
+## HECN
 A DeepMD model for high-entropy carbides and carbonitrides (HECN) [[1](https://www.nature.com/articles/s41598-024-78377-4),[2](https://www.sciencedirect.com/science/article/pii/S0925838824037666)].
 
 We consider here HECN structures in the crystalline and liquid states, and for each structure we perform AIMD simulations at a constant temperature of 3500 K during the 200 steps with a timestep of 1.5 fs. The general procedure of training is presented in the following figure, and details can be found in the Ref.[1](https://www.nature.com/articles/s41598-024-78377-4)
 
 ![image](https://github.com/user-attachments/assets/3da01ba7-6576-42ac-9679-e4ecd2b567ba)
 
-###Training
+### Training
 
 The DP-PBE model is constructed using a smooth edition of the Deep Potential model [3]. The DeePMD-kit package is used for training. In each iteration, two models are trained simultaneously using the same data set, with the only difference being the random seeds employed to initialize the model parameters. The sizes of the embedding and fitting nets are set to (30, 60, 120) and (120, 120, 120), respectively. 
 The cut-off radius is set to 6 Å. The Adam stochastic gradient descent method with the default hyperparameter settings provided by the TensorFlow package is used to train the DP models.
@@ -17,7 +17,7 @@ The starting and final learning rate was 1×10^−4 and 5×10^−8, respectively
 
 In each DP-GEN [4,5] iteration the DP model is trained with 5.0×10^4 steps.
 
-References
+### References
 
 [1] V. S. Baidyshev, C. Tantardini, and A. G. Kvashnin, Melting simulations of high-entropy carbonitrides by deep learning potentials, Sci Rep 14, 28678 (2024).
 
