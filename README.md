@@ -3,6 +3,7 @@ Project devoted to high entropy materials (HEM)
 
 ## **H**igh-**E**ntropy **C**arbonitrides **(HECN)**
 A DeepMD model for high-entropy carbides and carbonitrides (HECN) [[1](https://www.nature.com/articles/s41598-024-78377-4),[2](https://www.sciencedirect.com/science/article/pii/S0925838824037666)].
+The model is available from the [AIS-Square](https://www.aissquare.com/models/detail?pageType=models&id=320) repository, as well as the [dataset](https://www.aissquare.com/datasets/detail?pageType=datasets&name=DP_HECN_dataset&id=321) of structures. 
 
 We consider here HECN structures in the crystalline and liquid states, and for each structure we perform AIMD simulations at a constant temperature of 3500 K during the 200 steps with a timestep of 1.5 fs. The general procedure of training is presented in the following figure, and details can be found in the Ref.[1](https://www.nature.com/articles/s41598-024-78377-4)
 
@@ -13,9 +14,9 @@ We consider here HECN structures in the crystalline and liquid states, and for e
 The DP-PBE model is constructed using a smooth edition of the Deep Potential model [3]. The DeePMD-kit package is used for training. In each iteration, two models are trained simultaneously using the same data set, with the only difference being the random seeds employed to initialize the model parameters. The sizes of the embedding and fitting nets are set to (30, 60, 120) and (120, 120, 120), respectively. 
 The cut-off radius is set to 6 Å. The Adam stochastic gradient descent method with the default hyperparameter settings provided by the TensorFlow package is used to train the DP models.
 
-The starting and final learning rate was 1×10^−4 and 5×10^−8, respectively.
+The starting and final learning rate was 1×10<sup>−4</sup> and 5×10<sup>−8</sup>, respectively.
 
-In each DP-GEN [4,5] iteration the DP model is trained with 5.0×10^4 steps.
+In each DP-GEN [4,5] iteration the DP model is trained with 5.0×10<sup>4</sup> steps.
 
 ### References
 
