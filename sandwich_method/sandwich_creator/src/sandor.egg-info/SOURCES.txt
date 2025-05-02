@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/sandor/__init__.py
+src/sandor/functions.py
+src/sandor.egg-info/PKG-INFO
+src/sandor.egg-info/SOURCES.txt
+src/sandor.egg-info/dependency_links.txt
+src/sandor.egg-info/top_level.txt

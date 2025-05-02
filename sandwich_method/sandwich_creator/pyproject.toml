@@ -1,0 +1,20 @@
+[project]
+name = "sandor"
+version = "0.0.2"
+authors = [
+  { name="Alexander Kvashnin", email="A.Kvashnin@skoltech.ru" },
+  { name="Michel Lukanov", email="michel.lukanov@skoltech.ru" }
+]
+description = "Package for creating sandwich-structures from liquids and solids."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/AlexanderKvashnin/HEM.git"
+Issues = "https://github.com/AlexanderKvashnin/HEM/issues"

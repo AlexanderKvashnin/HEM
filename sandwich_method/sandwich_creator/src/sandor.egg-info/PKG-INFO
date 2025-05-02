@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: sandor
+Version: 0.0.2
+Summary: Package for creating sandwich-structures from liquids and solids.
+Author-email: Alexander Kvashnin <A.Kvashnin@skoltech.ru>, Michel Lukanov <michel.lukanov@skoltech.ru>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/AlexanderKvashnin/HEM.git
+Project-URL: Issues, https://github.com/AlexanderKvashnin/HEM/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# SANDOR
+
+SANDOR was created for construction sandwich-structures from liquid and solid systems. You can use [this repository](https://github.com/AlexanderKvashnin/HEM) for more details.
+
+**Required libraries:**
+- numpy==1.26.4
+- pandas==2.0.3
+- ase==3.22.1
+
+**Example of application:**
+
+```
+from sandor.functions import get_sandwich_structures
+
+path_solid = '<path/to/solid/structure>'
+path_liquid = '<path/to/liquid/structure>'
+
+sandwich_structures = get_sandwich_structures(path_solid, path_liquid)
+
+#sandwich_structures -> list[ase.atoms.Atoms]
+```

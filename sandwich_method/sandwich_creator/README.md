@@ -2,13 +2,6 @@
 
 SANDOR was created for construction sandwich-structures from liquid and solid systems. You can use [this repository](https://github.com/AlexanderKvashnin/HEM) for more details.
 
-You can install this package by means of:
-
-```
-pip install -i https://test.pypi.org/simple/ sandor
-
-```
-
 **Required libraries:**
 - numpy==1.26.4
 - pandas==2.0.3
@@ -26,5 +19,3 @@ sandwich_structures = get_sandwich_structures(path_solid, path_liquid)
 
 #sandwich_structures -> list[ase.atoms.Atoms]
 ```
-
-See tha example in **example.ipynb**.
